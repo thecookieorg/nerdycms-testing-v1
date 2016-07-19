@@ -1,1 +1,3 @@
-_nav.html.erb
+<% @pages.each do |page| %>
+	<%= link_to page.title, page %>
+<% end %>
